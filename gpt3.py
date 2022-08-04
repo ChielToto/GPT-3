@@ -2,7 +2,7 @@ import os
 import sys
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""                    ## Insert personal OpenAI API-key
 
 def gpt3(prompt_input, maxTokens, temperature):
     response = openai.Completion.create(
