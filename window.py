@@ -119,6 +119,8 @@ def get_output():
 
 maxTokens1 = 50
 def make_suggestion():
+    """"Uses the smaller curie model to add a suggestion to the sentence in the output box.
+    ALT-L can be used to summon the suggestion and TAB can be used to insert it, ESCAPE removes the suggestion."""
     text = get_output()
     if text != "":
         output.tag_delete("suggestion")
